@@ -1,0 +1,85 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,button,textarea{
+	padding: 0;
+	margin: 0;
+}
+img{
+	vertical-align: top;
+	border: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none; 
+	/*inherit继承父元素的属性值*/
+	color: rgb(137, 137, 137);
+}
+/* a:hover{
+	color: red;
+} */
+html{
+	font-family: "STKaiti ","微软雅黑";
+	font-size: 12px;
+	color: #333;
+}
+.cl:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.cl{
+	/*解决IE6、7的浮动问题*/
+	zoom: 1;
+}
+.w{
+	width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/**************** 单行超出省略 ********************/
+.el{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+
+
+.bd0{
+	border: 0;
+}
+.red{
+	color: red;
+}
+.center{
+	text-align: center;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+
+
+/*index.css*/
+/*user.css*/
+/*cart.css*/
+/*detail.css*/
+/*login.css*/
+
+
+
+
+/*css精灵图部分*/
+
+
+/*公共的头部*/
+
+
+
+/*公共的尾部*/

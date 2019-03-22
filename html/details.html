@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/rest.css">
+</head>
+
+<body>
+    <div class="top" id="top">
+        <p class="top-box">生于长野·安于室</p>
+    </div>
+    <!-- 头部 -->
+    <div class="header" id="header">
+        <div class="header-box">
+            <h1 class="logo-box"> <a href="../index.html"><img src="../images/index/logo.png" alt=""></a> </h1>
+            <ul class="header-nav">
+                <li class="furniture"> <a href="../index.html" class="selecta">家具</a>
+                    <div class="furniture-subnav">
+                        <ul>
+                            <li><a href="">椅</a> </li>
+                            <li> <a href="#zhuo">桌</a></li>
+                            <li><a href="">床</a></li>
+                            <li> <a href="">几</a></li>
+                            <li> <a href="">柜</a> </li>
+                            <li> <a href="">沙发</a></li>
+                            <li> <a href="">一枚版</a></li>
+                            <li class="other"> <a href="">其他</a></li>
+                            <li> <a href="">本线</a></li>
+                            <li> <a href="">FF线</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="home"> <a href="">家居</a>
+                    <div class="home-subnav">
+                        <ul>
+                            <li> <a href="">咖啡茶具</a> </li>
+                            <li> <a href="">餐具</a> </li>
+                            <li> <a href="">厨具</a> </li>
+                            <li> <a href="">家纺</a> </li>
+                            <li> <a href="">香氛</a> </li>
+                            <li> <a href="">收纳</a> </li>
+                            <li> <a href="">装饰</a> </li>
+                            <li> <a href="">养护</a> </li>
+                            <li> <a href="">园艺</a> </li>
+                            <li> <a href="">户外</a> </li>
+                            <li> <a href="">家电</a> </li>
+                            <li> <a href="">文具</a> </li>
+                            <li> <a href="">配饰</a> </li>
+                            <li class="other"> <a href="">其他</a> </li>
+                            <li> <a href="">Sale</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="art"> <a href="">艺术</a>
+                    <div class="art-subnav">
+                        <ul class="art-ul">
+                            <li><a href="">艺术家</a></li>
+                            <li><a href="">作品</a></li>
+                            <li><a href="">展览</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="column"> <a href="">栏目</a>
+                    <div class="column-subnav">
+                        <ul class="column-ul">
+                            <li><a href="">梵几在家</a></li>
+                            <li><a href="">串门</a></li>
+                            <li><a href="">ARTSTACE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="news"> <a href="">新事</a> </li>
+            </ul>
+            <ul class="header-event">
+                <li> <input type="text" class="seach"> <img src="../images/index/top1.png" alt=""></li>
+                <li id="shoppingcars" ><img src="../images/index/top2.png" alt=""></li>
+                <li><img src="../images/index/top3.png" alt=""></li>
+                <li id="login-tu"><img src="../images/index/top4.png" alt=""></li>
+                <!-- <li class="login-zi" id="login-zi"> <a id="register">注册</a> /<a id="login">登录</a> </li> -->
+                <li id="denglu-suce"> <a> <img src="../images/index/userimg.png"></a>
+                    <p id="cancle-top">退出</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ---------------------------------------头部结束---------------------------------- -->
+    <div id="details" class="details">
+        <div class="details-box">
+            <div class="details-left">
+                <ul class="details-left-right" id="details-nav">
+                    <!-- <li><img src="../images/details/chair-1-2.jpg" alt=""></li>
+                    <li><img src="../images/details/chair-1-3.jpg" alt=""></li>
+                    <li><img src="../images/details/chair-1-4.jpg" alt=""></li> -->
+                </ul>
+
+
+                <div class="details-left-left" id="details-left-left">
+                    <img src="../images/details/chair-1-2.jpg" alt="" id="leftImg">
+                    <div class="smallshadow"></div>
+                    <div class="big-shadow"><img id="bigimg" src="../images/details/chair-1-2.jpg" alt=""></div>
+                </div>
+
+
+            </div>
+            <div class="details-right">
+                <h3 id="goodsname">青山椅</h3>
+                <p class="bianhao" id="goodsnumber">Y3-34-34-34</p>
+                <p class="jiage">￥<span id="goodsprice">123.00</span></p>
+                <p class="materisl">木色Material</p>
+                <ul class="kid" id="kid">
+                    <!-- <li class="kid-check">美国白蜡木</li>
+                    <li>美国白蜡木</li>
+                    <li>美国白蜡木</li> -->
+                </ul>
+                <div class="number">选购数量 quantity</div>
+                <div class="number-shu"><span id="dele">-</span><input type="text" class="num" id="num" value="1"><span
+                        id="add">+</span>
+                    <p>件/piece</p>
+                </div>
+                <div class="delivery">发货周期 delivery</div>
+                <p class="delivery-tips" id="delivery-tips">家具制作周期为6-8周</p>
+
+                <button class="shoppingcar">加入购物车</button><button class="buying">直接购买</button>
+                <div class="addshoppingcar-shadow" id="addshoppingcar-shadow">
+                    <div class="addshoppingcar-box">
+                        <div class="addshoppingcar">
+                            <span class="cancle2" id="cancle2" >x</span>
+                            <p>商品已添加购物车</p>
+                            <button class="continue">继续购物</button><button class="account">去结算</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="particulars">
+
+        <div class="particulars-box">
+            <div class="particulars-topimg"><img src="../images/details/cat.jpg" alt="">
+                <p>梵几设计</p>
+                <p>DESIGNED BY FANJI</p>
+            </div>
+            <div class="chicun">
+                <div class="particulars-left">
+                    <img id="chicuntu" src="../images/details/chair-1-1.png" alt="">
+                </div>
+                <div class="particulars-right">
+                    <img class="ruler" src="../images/details/ruler.png" alt="">
+                    <div class="particulars-title">产品参数 Product Parameter</div>
+                    <p id="chucun">产品尺寸(cm)：L/W56 P/D57 H91（不含脚垫） H45（坐高）H65（扶手高）</p>
+                    <p id="tiji">包装体积(m³)：0.45</p>
+                    <img class="hand" src="../images/details/hand.png" alt="">
+                    <div class="particulars-title">材质 Material</div>
+                    <p id="caizhi">框架材质：美国黑胡桃木</p>
+                    <p id="ruanti">软体：E0级实木多层板、高回弹海绵</p>
+                    <p id="buniao">布料：意大利进口羊毛面料</p>
+                    <img class="marker" src="../images/details/marker.png" alt="">
+                    <div class="particulars-title">产地 Production Place</div>
+                    <p id="chandi">北京</p>
+                    <img class="wrench" src="../images/details/wrench.png" alt="">
+                    <div class="particulars-title">安装方式 Installation Method</div>
+                    <p id="anzhuang">整装</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-img">
+        <img src="../images/details/chair-1-5.jpg" id="footer-img">
+    </div>
+
+
+
+    <!-- -------------------------------------底部 ------------------------------------->
+    <div class="foot">
+        <div class="foot-box">
+            <ul>
+                <li class="foot-title"><a href="">关于我们</a></li>
+                <li><a href="">梵几STORY</a></li>
+                <li><a href="">梵几实体店</a></li>
+                <li><a href="">媒体报道</a></li>
+                <li><a href="">招聘信息</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">购物指南</a></li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员制度</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">关于配送</a></li>
+                <li><a href="">家具配送</a></li>
+                <li><a href="">家具配送</a></li>
+                <li><a href="">一枚版配送</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">售后服务</a></li>
+                <li><a href="">家具售后</a></li>
+                <li><a href="">家具售后</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">商业合作</a></li>
+                <li><a href="">项目批量采购</a></li>
+                <li><a href="">设计公司合作</a></li>
+                <li><a href="">家具品牌合作</a></li>
+                <li><a href="">艺术品合作</a></li>
+            </ul>
+            <div class="foot-chat">
+                <p><a href=""><img src="../images/index/weibo.png" alt=""></a></p>
+                <p><a href=""><img src="../images/index/weixin.png" alt=""></a></p>
+            </div>
+            <div class="copyright ">
+                <p>梵几独立家居品牌 &copy 2017 Fnji Interior design Co. Ltd. Beijing, China
+                    京ICP备13004049号-3</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ------------------------------------------- -->
+
+    <!-- 登录遮罩层 -->
+    <div class="login-shadow" id="login-shadow">
+        <div class="login-box">
+            <button class="cancle" id="cancle">x</button>
+            <div class="login-box2">
+                <div class="login-left">
+                    <p class="login-saoma">手机扫码登录</p>
+                    <p class="login-weixin"><img src="../images/index/weixinlogin_03.png" alt=""></p>
+                    <p class="login-tips">打开微信扫一扫登录</p>
+                </div>
+                <div class="login-right">
+                    <p class="userlogin">账户登录</p>
+                    <div class="username-div">
+                        <input type="text" name="" class="username" id="username" placeholder="手机或邮箱" title="请输入常用邮箱">
+                    </div>
+                    <div class="username-div">
+                        <input type="text" class="userpwd" id="userpwd" placeholder="密码" title="请输入6到16位字母数字_$符号的密码">
+                        <p class="zhuanghu-tips" id="zhuanghu-tips"></p>
+                    </div>
+                    <p class="remeber-p"><input id="remeber" type="checkbox"> <label for="remeber"
+                            class="remeber-label">记住密码</label> <span class="userpad-new"><a href="">忘记密码或账号</a> </span>
+                    </p>
+                    <button class="denglu" id="denglu">登录</button>
+                    <p class="zhuce">还没有梵几账号<a href="">点击注册</a></p>
+                    <button class="phone-denglu">手机快捷登录</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册遮罩层 -->
+    <div class="register-shadow" id="register-shadow">
+        <div class="register-box">
+            <button class="cancle" id="cancle2">x</button>
+            <div class="register-box2">
+                <h3>注册</h3>
+                <ul>
+                    <li class="register-li">
+                        <input type="text" title="请输入常用电话号码或者邮箱" placeholder="手机或邮箱" id="register-name">
+                        <p class="zhuanghu-tips" id="zhucename-tips"></p>
+                    </li>
+                    <li class="register-li">
+                        <input type="text" title="看不清?点击验证码更新" placeholder="验证码" id="verification-code">
+                        <i class="verification" id="verification">1234</i>
+                        <p class="zhuanghu-tips" id="zhuceyanzhen-tips"></p>
+                    </li>
+                    <li class="register-li">
+                        <input type="text" title="请输入6到16位字母数字_$符号的密码" placeholder="密码" id="register-pwd">
+                        <p class="zhuanghu-tips" id="mima1-tips"></p>
+                    </li>
+                    <li class="register-li">
+                        <input type="text" title="请输入6到16位字母数字_$符号的密码" placeholder="重复密码" id="register-pwd1">
+                        <p class="zhuanghu-tips" id="mima2-tips"></p>
+                    </li>
+                    <li class="register-btn">
+                        <input type="checkbox" class="registerbtn" id="registerbtn">
+                        <span>我已阅读并同意遵守 法律声明 和 隐私条款</span>
+                    </li>
+                    <li><button class="register-zhuce" id="register-zhuce">注册</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/regidter.js"></script>
+<script>
+    // 获取id
+    var str = window.location.href;
+    var id = str.split("=")[1];
+    var type1 = "";
+    var zhonglei = "";
+    var xuanzetupian = "";
+    // 动态生成
+    $.ajax({
+        type: "get",
+        url: "../php/details.php",
+        data: {
+            id: id
+        },
+        dataType: "json",
+        success: function (data) {
+            var {
+                id,
+                goodsname,
+                goodstype,
+                goodsprice,
+                goodsnumber,
+                goodsmaterial,
+                goodsperiod,
+                goodssize,
+                goodsvolume,
+                ruanti,
+                buniao,
+                anzhuangfangshi,
+                chandi,
+                goodsimg1,
+                goodscaizhi,
+                goodsimg2,
+                goodsimg3,
+                imgnum,
+                type
+            } = data;
+            type1 = type;
+            //////// 图片
+            var imgsrc = ""
+            $("#details-nav").html("");
+            for (var i = 1; i < imgnum * 1 + 1; i++) {
+                imgsrc += `<li smallimg='../images/details/${goodsimg2}${i * 1 + 1}.jpg'  bigimg="../images/details/${goodsimg2}${i * 1 + 1}.jpg"><img src="../images/details/${goodsimg2}${i * 1 + 1}.jpg" alt=""></li>`
+            }
+            $("#details-nav").html(imgsrc);
+            //////// 种类
+            var materialList = [];
+            materialList = goodsmaterial.split(",");
+            var kids = "";
+            for (var k = 0; k < materialList.length; k++) {
+                var everyKid = materialList[k];
+                var x = k * 1 + 2 * 1;
+                kids += `<li data="${x}">${everyKid}</li>`;
+            };
+
+            $("#leftImg").attr("src", `../images/details/${goodsimg2}2.jpg`);
+            $("#bigimg").attr("src", `../images/details/${goodsimg2}2.jpg`);
+            $("#kid").append(kids);
+            $("#goodsname").html(goodsname);
+            $("#goodsnumber").html(goodsnumber);
+            $("#goodsprice").html(goodsprice);
+            $("#delivery-tips").html(goodsperiod);
+            $("#chucun").html(goodssize);
+            $("#tiji").html(goodsvolume);
+            $("#caizhi").html(goodscaizhi);
+            $("#ruanti").html(ruanti);
+            $("#buniao").html(buniao);
+            $("#chandi").html(chandi);
+            $("#anzhuang").html(anzhuangfangshi);
+            $("#chicuntu").attr("src", `../images/details/${goodsimg1}`);
+            $("#footer-img").attr("src", `../images/details/${goodsimg3}`);
+            // 设置遮罩层可以移动
+            var boxLeft = $("#details-left-left").offset()["left"];
+            var boxTop = $("#details-left-left").offset()["top"];
+            var boxWidth = parseInt($("#details-left-left").css("width"));
+            var boxHeight = parseInt($("#details-left-left").css("height"));
+            var smallShadowBoxw = parseInt($(".smallshadow").css("width"));
+            var smallShadowBoxh = parseInt($(".smallshadow").css("height"));
+            var bigimgWidth = parseInt($("#bigimg").css("width"));
+            var bigimgHeight = parseInt($("#bigimg").css("height"));
+            var maxLeft = boxWidth - smallShadowBoxw;
+            var maxTop = boxHeight - smallShadowBoxh;
+            $("#details-left-left").mousemove(function (e) {
+                var evt = window.event || e;
+                var pagex = evt.pageX;
+                var pagey = evt.pageY;
+                var movex = pagex - boxLeft - smallShadowBoxw / 2;
+                var movey = pagey - boxTop - smallShadowBoxh / 2;
+                if (movex <= 0) {
+                    movex = 0;
+                }
+                if (movey <= 0) {
+                    movey = 0;
+                }
+                if (movex >= maxLeft) {
+                    movex = maxLeft;
+                }
+                if (movey >= maxTop) {
+                    movey = maxTop;
+                }
+                var bigMovex = bigimgWidth * movex / boxWidth;
+                var bigMovey = boxHeight * movey / boxHeight;
+                $(".smallshadow").css({ "left": movex + "px", "top": movey + "px" });
+                $("#bigimg").css({ "left": -bigMovex, "top": -bigMovey });
+                $(".big-shadow").show();
+                $(".smallshadow").show();
+            })
+            $("#details-left-left").mouseleave(function () {
+                $(".big-shadow").hide();
+                $(".smallshadow").hide();
+            })
+            // 鼠标放在上面时图片变化
+            var navList = $("#details-nav li");
+            // console.log(navList);
+            for (let j = 0; j <= navList.length; j++) {
+                var liNav = navList[j];
+                $(liNav).mouseover(function () {
+
+                    var smallSrc = this.getAttribute("smallimg");
+                    $("#leftImg").attr("src", smallSrc);
+                    var bigSrc = this.getAttribute("bigimg");
+                    $("#bigimg").attr("src", bigSrc);
+                })
+            };
+            // 设置点击选择时图片更换 样式更换
+
+            $(document).on("click", "#kid li", function () {
+                $("#kid li").each(function (i) {
+                    $(this).css({ "border": "1px #666 solid", "color": "#666" });
+                    $("#leftImg").attr("src", "");
+                    $("#bigimg").attr("src", "");
+                })
+                $(this).css({ "border": "1px #000 solid", "color": "#000" });
+                var num = $(this).attr("data");
+                $("#leftImg").attr("src", `../images/details/${goodsimg2}${num}.jpg`);
+                $("#bigimg").attr("src", `../images/details/${goodsimg2}${num}.jpg`);
+
+                zhonglei = $(this).html();
+                xuanzetupian = $("#leftImg").attr("src");
+                //  alert(zhonglei+"+"+xuanzetupian);
+
+            })
+        }
+    });
+    ////////加号
+    $("#add").click(function () {
+        var number1 = $(this).prev().val();
+        $(this).prev().val(number1 * 1 + 1);
+    })
+    ///减号
+    // var count=0;
+    $("#dele").click(function () {
+        // count++
+        var number2 = $(this).next().val();
+        $(this).next().val(number2 * 1 - 1);
+        if (number2 == 0) {
+            $(this).next().val("1");
+            // $(this).removeAttr("onclick");
+        }
+        // console.log(count)
+    })
+    // 点击加入购物车 判断是否登录
+    $(".shoppingcar").click(function () {
+        var goodname = $("#goodsname").html();
+        var goodsprice = $("#goodsprice").html();
+        var goodsnum = $("#num").val();
+        var tupain1=xuanzetupian.split("/");
+      var tupian=tupain1[tupain1.length-1];
+        //判断是否选择商品种类
+        if (zhonglei) {
+            //判断是否登录
+            if (getCookie("username")) {
+
+                $.ajax({
+                    type: "get",
+                    url: "../php/addshoppingcar.php",
+                    data: {
+                        goodsid: id,
+                        goodsname: goodname,
+                        goodsprice: goodsprice,
+                        goodskid: zhonglei,
+                        goodsimg: tupian,
+                        goodstype: type1,
+                        goodsnum: goodsnum,
+                        userid: getCookie("userid")
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        // console.log(data)
+                        if (data["code"] == 1) {
+                            $("#addshoppingcar-shadow").show();
+
+                            $(".continue").click(function () {
+                                $("#addshoppingcar-shadow").hide();
+                            });
+                                $(".account").click(function () {
+                                    window.location.href = "shopingcar.html";
+                                });
+                                $("#cancle2").click(function(){
+                                    $("addshoppingcar-shadow").hide();
+                                });
+                            } else {
+                            confirm(data["msg"]);
+                        }
+                    }
+                })
+            } else {
+                $("#login-shadow").show();
+            }
+            // $(".continue").click(function(){
+            //     $("#addshoppingcar-shadow").hide();
+
+        } else {
+            confirm("请点击选择商品种类");
+        }
+    });
+    // 点击去结算 数据存入数据库
+    $(".buying").click(function(){
+        var goodname = $("#goodsname").html();
+        var goodsprice = $("#goodsprice").html();
+        var goodsnum = $("#num").val();
+        // alert(xuanzetupian);
+        var tupain1=xuanzetupian.split("/");
+      console.log(tupain1);
+      var tupian=tupain1[tupain1.length-1];
+      console.log(tupian);
+        //判断是否选择商品种类
+        if (zhonglei) {
+            //判断是否登录
+            if (getCookie("username")) {
+
+                $.ajax({
+                    type: "get",
+                    url: "../php/addshoppingcar.php",
+                    data: {
+                        goodsid: id,
+                        goodsname: goodname,
+                        goodsprice: goodsprice,
+                        goodskid: zhonglei,
+                        goodsimg: tupian,
+                        goodstype: type1,
+                        goodsnum: goodsnum,
+                        userid: getCookie("userid")
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data)
+                        if (data["code"] == 1) {
+                            window.location.href = "shopingcar.html";
+                            } else {
+                            confirm(data["msg"]);
+                        }
+                    }
+                })
+            } else {
+                $("#login-shadow").show();
+            }
+        } else {
+            confirm("请点击选择商品种类");
+        }
+    });
+
+
+    $("#cancle2").click(function () {
+        $("#addshoppingcar-shadow").hide();
+    })
+
+
+    // 头部登录注册
+    // 获取焦点把内容替换
+    $("#login-tu").hover(function () {
+
+        $("#login-tu").html(" <a id='register' style='cursor: pointer' >注册</a> /<a id='login' style='cursor: pointer'>登录</a> ");
+
+    }, function () {
+        $("#login-tu").html("<img src='../images/index/top4.png'>");
+
+    });
+
+    // 退出
+    if (getCookie("username")) {
+        $("#login-tu").hide();
+        $("#denglu-suce").show();
+        $("#cancle-top").hide();
+        $("#denglu-suce").hover(function () {
+            $("#cancle-top").show();
+            $("#cancle-top").click(function () {
+        $("#login-tu").show();
+        $("#denglu-suce").hide();
+        setCookie("username","", -7);
+        setCookie("userid","", -7);
+        window.location.reload();
+    })
+        }, function () {
+            $("#cancle-top").hide();
+        })
+    };
+    //
+    $(window).scroll(function () {
+        var height = parseInt($("#top").css("height"));
+        if ($(window).scrollTop() >= height) {
+            $("#header").css({ "position": "fixed", "top": "0", "left": "0", "z-index": "10" })
+        }
+        if ($(window).scrollTop() <= height) {
+            $("#header").css("position", "static");
+        }
+    });
+    // 购物车
+    $("#shoppingcars").click(function(){
+       if(getCookie("userid")){
+           window.location.href="shopingcar.html"
+       }else{
+           confirm("您未登录,请登录再进去购物车")
+       }
+   })
+    function getStyleAttr(obj, attr) {
+        if (window.getComputedStyle) {
+            return window.getComputedStyle(obj)[attr];
+        } else {
+            return obj.currentStyle[attr];
+        }
+    }
+
+
+
+</script>
+
+</html>

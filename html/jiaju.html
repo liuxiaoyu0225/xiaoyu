@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>家居</title>
+    <link rel="stylesheet" href="../css/jiaju.css">
+    <link rel="stylesheet" href="../css/rest.css">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+</head>
+<body>
+     <!-- 顶部 -->
+     <div class="top" id="top">
+        <p class="top-box">生于长野·安于室</p>
+    </div>
+    <!-- 头部 -->
+    <div class="header" id="header">
+        <div class="header-box">
+            <h1 class="logo-box"> <a href="../index.html"> <img src="../images/index/logo.png" alt=""></a></h1>
+            <ul class="header-nav">
+                <li class="furniture"> <a href="../index.html" class="selecta">家具</a>
+                    <div class="furniture-subnav">
+                        <ul>
+                            <li><a href="#yi">椅</a> </li>
+                            <li> <a href="#zhuo">桌</a></li>
+                            <li><a href="#chuang">床</a></li>
+                            <li> <a href="#ji">几</a></li>
+                            <li> <a href="#gui">柜</a> </li>
+                            <li> <a href="#shafa">沙发</a></li>
+                            <li> <a href="ymb">一枚版</a></li>
+                            <li class="other"> <a href="">其他</a></li>
+                            <li> <a href="">本线</a></li>
+                            <li> <a href="">FF线</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="home"> <a href="">家居</a>
+                    <div class="home-subnav">
+                        <ul>
+                            <li> <a href="">咖啡茶具</a> </li>
+                            <li> <a href="">餐具</a> </li>
+                            <li> <a href="">厨具</a> </li>
+                            <li> <a href="">家纺</a> </li>
+                            <li> <a href="">香氛</a> </li>
+                            <li> <a href="">收纳</a> </li>
+                            <li> <a href="">装饰</a> </li>
+                            <li> <a href="">养护</a> </li>
+                            <li> <a href="">园艺</a> </li>
+                            <li> <a href="">户外</a> </li>
+                            <li> <a href="">家电</a> </li>
+                            <li> <a href="">文具</a> </li>
+                            <li> <a href="">配饰</a> </li>
+                            <li class="other"> <a href="">其他</a> </li>
+                            <li> <a href="">Sale</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="art"> <a href="">艺术</a>
+                    <div class="art-subnav">
+                        <ul class="art-ul">
+                            <li><a href="">艺术家</a></li>
+                            <li><a href="">作品</a></li>
+                            <li><a href="">展览</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="column"> <a href="">栏目</a>
+                    <div class="column-subnav">
+                        <ul class="column-ul">
+                            <li><a href="">梵几在家</a></li>
+                            <li><a href="">串门</a></li>
+                            <li><a href="">ARTSTACE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="news"> <a href="">新事</a> </li>
+            </ul>
+            <ul class="header-event">
+                <li> <img src="../images/index/top1.png" alt=""></li>
+                <li  id="shoppingcars"><img src="../images/index/top2.png" alt=""></li>
+                <li   ><img src="../images/index/top3.png" alt=""></li>
+                <li id="login-tu"><img src="../images/index/top4.png" alt=""></li>
+                <!-- <li class="login-zi" id="login-zi"> <a id="register">注册</a> /<a id="login">登录</a> </li> -->
+                <li id="denglu-suce"> <a> <img src="../images/index/userimg.png"></a>
+                    <p id="cancle-top">退出</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="ad" id="ad">
+        <ul class="ad-img" id="ad-img">
+            <li class="item"><img src="../images/goodlist/ad1.jpg"></li>
+            <li><img src="../images/goodlist/ad2.jpg" alt=""></li>
+            <li><img src="../images/goodlist/ad3.jpg" alt=""></li>
+            <li><img src="../images/goodlist/ad4.jpg" alt=""></li>
+            <li><img src="../images/goodlist/ad5.jpg" alt=""></li>
+        </ul>
+
+        <ul class="ad-nav" id="ad-nav">
+            <li>
+                <p class="item"></p</li> <li>
+                    <p></p</li> <li>
+                        <p> </p</li> <li>
+                            <p> </p</li> <li>
+                                <p>
+                                    </p</li> 
+                                </ul>
+    </div>
+    <!-- -----------------------------------头部 -->
+
+    <div class="goodlist" >
+        <div class="goodslist-box" >
+            <div  class="goods-top">
+            <h2>家居</h2> <select name="" id="sele">
+                <option value="ASC">升序</option>
+                <option value="DESC">降序</option>
+
+            </select><p class="sele-p" >按价格排序</p>
+        </div>
+            <hr>
+            <ul class="everygoods .cl"  id="everygoods">
+
+                <!-- <li><a href=""><img src="../images/goodlist/1.jpg" alt=""><p><span>名字</span> <br> <span>价格</span></p></a></li> -->
+               
+            </ul>
+        </div>
+    </div>
+<div id="box" ></div>
+    <!-- ------------------------------------底部 -->
+    <div class="foot">
+        <div class="foot-box">
+            <ul>
+                <li class="foot-title"><a href="">关于我们</a></li>
+                <li><a href="">梵几STORY</a></li>
+                <li><a href="">梵几实体店</a></li>
+                <li><a href="">媒体报道</a></li>
+                <li><a href="">招聘信息</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">购物指南</a></li>
+                <li><a href="">购物流程</a></li>
+                <li><a href="">会员制度</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">关于配送</a></li>
+                <li><a href="">家具配送</a></li>
+                <li><a href="">家具配送</a></li>
+                <li><a href="">一枚版配送</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">售后服务</a></li>
+                <li><a href="">家具售后</a></li>
+                <li><a href="">家具售后</a></li>
+            </ul>
+            <ul>
+                <li class="foot-title"><a href="">商业合作</a></li>
+                <li><a href="">项目批量采购</a></li>
+                <li><a href="">设计公司合作</a></li>
+                <li><a href="">家具品牌合作</a></li>
+                <li><a href="">艺术品合作</a></li>
+            </ul>
+            <div class="foot-chat">
+                <p><a href=""><img src="../images/index/weibo.png" alt=""></a></p>
+                <p><a href=""><img src="../images/index/weixin.png" alt=""></a></p>
+            </div>
+            <div class="copyright ">
+                <p>梵几独立家居品牌 &copy 2017 Fnji Interior design Co. Ltd. Beijing, China
+                    京ICP备13004049号-3</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- 登录遮罩层 -->
+    <div class="login-shadow" id="login-shadow">
+        <div class="login-box">
+            <button class="cancle" id="cancle">x</button>
+            <div class="login-box2">
+                <div class="login-left">
+                    <p class="login-saoma">手机扫码登录</p>
+                    <p class="login-weixin"><img src="../images/index/weixinlogin_03.png" alt=""></p>
+                    <p class="login-tips">打开微信扫一扫登录</p>
+                </div>
+                <div class="login-right">
+                    <p class="userlogin">账户登录</p>
+                    <div class="username-div">
+                        <input type="text" name="" class="username" id="username" placeholder="手机或邮箱" title="请输入常用邮箱">
+                    </div>
+                    <div class="username-div">
+                        <input type="text" class="userpwd" id="userpwd" placeholder="密码" title="请输入6到16位字母数字_$符号的密码">
+                        <p class="zhuanghu-tips" id="zhuanghu-tips"></p>
+                    </div>
+                    <p class="remeber-p"><input id="remeber" type="checkbox"> <label for="remeber"
+                            class="remeber-label">记住密码</label> <span class="userpad-new"><a href="">忘记密码或账号</a> </span>
+                    </p>
+                    <button class="denglu" id="denglu">登录</button>
+                    <p class="zhuce">还没有梵几账号<a href="" id="dianjizhuce" >点击注册</a></p>
+                    <button class="phone-denglu">手机快捷登录</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册遮罩层 -->
+    <div class="register-shadow" id="register-shadow">
+        <div class="register-box">
+            <button class="cancle" id="cancle2">x</button>
+            <div class="register-box2">
+                <h3>注册</h3>
+                <ul>
+                    <li class="register-li">
+                        <input type="text" title="请输入常用电话号码或者邮箱" placeholder="手机或邮箱" id="register-name">
+                        <p class="zhuanghu-tips" id="zhucename-tips"></p>
+                    </li>
+                    <li class="register-li">
+                        <input type="text" title="看不清?点击验证码更新" placeholder="验证码" id="verification-code">
+                        <i class="verification" id="verification">1234</i>
+                        <p class="zhuanghu-tips" id="zhuceyanzhen-tips"></p>
+                    </li>
+                    <li class="register-li">
+                        <input type="text" title="请输入6到16位字母数字_$符号的密码" placeholder="密码" id="register-pwd">
+                        <p class="zhuanghu-tips" id="mima1-tips"></p>
+                    </li>
+                    <li class="register-li">
+                        <input type="text" title="请输入6到16位字母数字_$符号的密码" placeholder="重复密码" id="register-pwd1">
+                        <p class="zhuanghu-tips" id="mima2-tips"></p>
+                    </li>
+                    <li class="register-btn">
+                        <input type="checkbox" class="registerbtn" id="registerbtn">
+                        <span>我已阅读并同意遵守 法律声明 和 隐私条款</span>
+                    </li>
+                    <li><button class="register-zhuce" id="register-zhuce">注册</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/regidter.js"></script>
+<script src="../js/page.js"></script>
+<script>
+var paixu="asc";
+    // /php/paixu.php?paixu=asc
+var showpage=3;
+var showNum=6;
+var pageIndex=1
+$.ajax({
+    type:"get",
+    url:"../php/goodsall.php",
+    dataType:"json",
+    success:function(count){
+        new Page("#box",{
+            next:"下一页",
+            prev:"上一页",
+            dataCount:count,
+            shownum:showNum,
+            showpage:showpage,
+            callback:function(pageIndex){
+                pageIndex=pageIndex;
+                goodslist(showNum, (pageIndex-1)*showNum,paixu)
+            }
+        })
+    }
+})
+    // 获取全部商品
+    $("#sele").change(function(){
+        var paixu=$(this).val();
+        goodslist(showNum, (pageIndex-1)*showNum,paixu)
+    })
+
+function goodslist(shownum,startnum,paixu){
+   
+$.ajax({
+    type:"get",
+    url:"../php/goodslist.php",
+    data:{
+        shownum:shownum,
+        startnum:startnum,
+        paixu:paixu
+    },
+    dataType:"json",
+    success:function(data){
+        var html="";
+        $("#everygoods").html("");
+        $(data).each(function(i){
+            var item=data[i];
+            // console.log(item)
+            var {
+                id,
+                name,
+                price,
+                img,
+                type,
+            }=item;
+            html+=`<li  data-id="${id} data-type="${type}"><a href=""><img src="../images/goodlist/${img}" alt=""><p><span>${name}</span> <br> <span>${price}</span></p></a></li>`
+        })
+        $("#everygoods").append(html);
+    }
+});
+}
+// 排序
+// $("#sele").change(function(){
+// var paixu=$(this).val();
+// $.ajax({
+//     type:"get",
+//     url:"../php/paixu.php",
+//     data:{
+//        paixu:paixu
+//     },
+//     success:function(data){
+//         var html="";
+//         $("#everygoods").html("");
+//         $(data).each(function(i){
+//             var item=data[i];
+//             // console.log(item)
+//             var {
+//                 id,
+//                 name,
+//                 price,
+//                 img,
+//                 type,
+//             }=item;
+//             html+=`<li  data-id="${id} data-type="${type}"><a href=""><img src="../images/goodlist/${img}" alt=""><p><span>${name}</span> <br> <span>${price}</span></p></a></li>`
+//         })
+//         $("#everygoods").append(html);
+//     }
+// })
+
+
+// })
+
+
+
+// php/goodslist.php?shownum=6&startnum=0
+</script>
+<script>
+// 退出
+if (getCookie("username")) {
+        $("#login-tu").hide();
+        $("#denglu-suce").show();
+        $("#cancle-top").hide();
+
+        $("#denglu-suce").hover(function () {
+            $("#cancle-top").show();
+            $("#cancle-top").click(function () {
+        $("#login-tu").show();
+        $("#denglu-suce").hide();
+        setCookie("username","", -7);
+        setCookie("userid","", -7);
+        window.location.reload();
+    })
+        }, function () {
+            $("#cancle-top").hide();
+        })
+    };
+
+  
+    // 获取焦点把内容替换
+    $("#login-tu").hover(function () {
+
+        $("#login-tu").html(" <a id='register' style='cursor: pointer' >注册</a> /<a id='login' style='cursor: pointer'>登录</a> ");
+
+    }, function () {
+        $("#login-tu").html("<img src='../images/index/top4.png'>");
+
+    });
+
+
+
+     //滚动条滚动到指定距离 头部做固定定位
+ $(window).scroll(function () {
+    var height = parseInt($("#top").css("height"));
+    if ($(window).scrollTop() >= height) {
+        $("#header").css({ "position": "fixed", "top": "0", "left": "0", "z-index": "10" })
+    }
+    if ($(window).scrollTop() <= height) {
+        $("#header").css("position", "static");
+    }
+});
+// 轮播图
+var timer = null;
+var index = 0;
+var imgList = document.querySelectorAll("#ad #ad-img li");
+var navList = document.querySelectorAll("#ad #ad-nav li p");
+lunbo();
+function lunbo() {
+    var maxLength = navList.length;
+    timer = setInterval(function () {
+        index++;
+        if (index >maxLength - 1) {
+            index = 0;
+        }
+        show()
+
+    }, 2000)
+};
+// 设置鼠标放在nav点上时出现对应图片,并清除定时器
+for(let j=0;j<navList.length;j++){
+    let temp=navList[j];
+// 鼠标移上
+    temp.onmouseover=function(){
+        index=j;
+        show()
+        clearInterval(timer);
+    }
+    // 鼠标移出
+    temp.onmouseout=function(){
+        lunbo();
+    }
+}
+function show() {
+    for (let i = 0; i < navList.length; i++) {
+        imgList[i].className = "";
+        navList[i].className = "";
+
+    }
+    imgList[index].className = "item";
+    navList[index].className = "item";
+}
+
+$("#shoppingcars").click(function(){
+       if(getCookie("userid")){
+           window.location.href="shopingcar.html"
+       }else{
+           confirm("您未登录,请登录再进去购物车")
+       }
+   })
+
+    // 注册
+</script>
+</html>

@@ -1,0 +1,1628 @@
+@charset "utf-8";
+$minWidth: 1012px;
+$maxWidth: 100%;
+html,
+body {
+  font-family: "STKaiti";
+}
+.top {
+  width: $maxWidth;
+  background-color: rgb(247, 247, 247);
+  height: 28px;
+  .top-box {
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    color: rgb(165, 165, 165);
+    height: 28px;
+  }
+}
+
+.header {
+  position: relative;
+  //   overflow: hidden;
+  width: $maxWidth;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 87px;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  .header-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    .logo-box {
+      width: 62px;
+      height: 85px;
+      border: 1px rgb(182, 182, 182) solid;
+      float: left;
+      img {
+        width: 62px;
+        height: 85px;
+      }
+    }
+    .header-nav {
+      width: 610px;
+      height: 85px;
+      margin-left: auto;
+      margin-right: auto;
+      .furniture,
+      .home,
+      .art,
+      .column,
+      .news {
+        color: rgb(137, 137, 137);
+        font-size: 14px;
+        margin: 0 47px;
+        float: left;
+
+        a {
+          display: inline-block;
+          padding-top: 35px;
+          padding-bottom: 30px;
+        }
+        a.selecta {
+          color: rgb(93, 93, 93);
+          // border-bottom: 3px solid black;
+        }
+
+        .furniture-subnav,
+        .home-subnav,
+        .art-subnav,
+        .column-subnav {
+          width: $maxWidth;
+          height: 84px;
+          position: absolute;
+          left: 0;
+          bottom: -84px;
+          background-color: rgba(255, 255, 255, 0.5);
+          text-align: center;
+          display: none;
+          transition: 3s;
+          z-index: 60;
+          ul {
+            margin-left: 225px;
+            li {
+              float: left;
+              padding: 0 10px;
+            }
+            li.other {
+              line-height: 84px;
+              padding: 0;
+              a {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 10px;
+                line-height: 12px;
+                border-right: 1px rgb(137, 137, 137) solid;
+              }
+            }
+          }
+          .art-ul {
+            margin-left: 593px;
+          }
+          .column-ul {
+            margin-left: 700px;
+          }
+        }
+      }
+      .furniture a{
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .furniture:hover .furniture-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .furniture:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .home:hover .home-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .home:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .art:hover .art-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .art:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .column:hover .column-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .column:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .news:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+    }
+    .header-event {
+      float: right;
+      margin-top: -57px;
+      li {
+        padding: 9px;
+        float: left;
+        cursor: pointer;
+        .seach{
+          width: 50px;
+          height: 14px;
+          border-radius:16px; 
+          border:1px #666 solid;
+          padding:0 5px;
+        }
+        .seach:focus{
+          outline: none;
+        }
+       
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      #denglu-suce{
+        display: none;
+        position: relative;
+        p{
+          position: absolute;
+          left:0;
+          bottom: -30px;
+          width: 50px;
+          height: 30px;
+          font-size: 14px;
+          text-align: center;
+          line-height: 30px;
+          border: 1px solid black;
+          // display: none;
+        }
+      }
+      .login-zi{
+        cursor: pointer;
+        display:none;
+        a:hover{
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+}
+// 轮播图
+.ad {
+  width: $maxWidth;
+  .ad-img {
+    width: $maxWidth;
+    height: 560px;
+    position: relative;
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $maxWidth;
+      display: none;
+      height: 560px;
+      img {
+        width: $maxWidth;
+        height: 560px;
+      }
+    }
+    li.item {
+      display: block;
+    }
+  }
+  .ad-nav {
+    width: $maxWidth;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 10px 5px;
+      background: #fff;
+      p {
+        width: 3px;
+        height: 3px;
+        background-color: #666;
+        border-radius: 50%;
+        margin: 8px auto;
+      }
+      p.item {
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+// 椅子
+.chair {
+  width: $maxWidth;
+  background-color: #fff;
+  margin-top: 20px;
+  .chair-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 64px;
+      height: 90px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .chair-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      overflow: hidden;
+      .tanglang-chair {
+        width: 486px;
+        height: 486px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        p {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .tanglang-chair:hover p {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .qingcr-chair,
+      .qinger-chair {
+        width: 233px;
+        height: 233px;
+        float: left;
+        margin: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .qingcr-chair,
+      .qinger-chair {
+        position: relative;
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+          }
+        }
+        .jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .qinger-chair:hover .jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .qingcr-chair:hover .jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .deng-chair {
+      position: relative;
+      width: 486px;
+      float: left;
+      margin-left: 10px;
+
+      img {
+        width: 100%;
+      }
+      .jiage {
+        visibility: hidden;
+        opacity: 0;
+        padding-top: 10px;
+        width: 100%;
+        height: 64px;
+        color: #666;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: 1s;
+        span {
+          display: inline;
+          color: #000;
+        }
+      }
+    }
+
+    .deng-chair:hover .jiage {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+// 桌子
+.desk {
+  width: $maxWidth;
+  margin-top: 40px;
+  .desk-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 74px;
+        height: 50px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .desk-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      .desk-majiang {
+        width: 486px;
+        height: 486px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+          }
+        }
+        .desk-majiang1 {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .desk-majiang:hover .desk-majiang1 {
+        visibility: visible;
+        opacity: 1;
+      }
+      .desk-zhuo {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        float: left;
+        margin: 8px;
+        img {
+          width: 100%;
+        }
+        .desk-zhuo1 {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .desk-zhuo:hover .desk-zhuo1 {
+        visibility: visible;
+        opacity: 1;
+      }
+      .desk-zhuo7 {
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// 床
+.bed {
+  width: $maxWidth;
+  margin-top: 40px;
+  .bed-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 74px;
+        height: 54px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .bed-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      .bed-taichuang {
+        width: 486px;
+        height: 486px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+          }
+        }
+        .bed-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .bed-taichuang:hover .bed-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .bed-weichuang {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        float: left;
+        margin: 10px;
+        img {
+          width: 100%;
+        }
+        .bed-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .bed-weichuang:hover .bed-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .bed-luohan {
+        position: relative;
+        width: 488px;
+        height: 233px;
+        float: left;
+        margin: 10px;
+        img {
+          width: 100%;
+        }
+        .bed-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+    }
+    .bed-luohan:hover .bed-jiage {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+// 几
+.lowtable {
+  width: $maxWidth;
+  margin-top: 40px;
+  .lowtable-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 52px;
+        height: 56px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .lowtable-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      .lowtable-gong {
+        width: 486px;
+        height: 486px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+          }
+        }
+        .lowtable-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .lowtable-gong:hover .lowtable-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .lowtable-fuyou {
+        position: relative;
+        width: 488px;
+        height: 233px;
+        float: left;
+        margin: 10px 5px;
+        img {
+          width: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+          }
+        }
+        .lowtable-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .lowtable-fuyou:hover .lowtable-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .lowtable-yuanji {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        float: left;
+        margin: 10px;
+        img {
+          width: 100%;
+        }
+        .lowtable-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .lowtable-yuanji:hover .lowtable-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+// 柜
+.cab {
+  width: $maxWidth;
+  margin-top: 40px;
+  .cab-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 52px;
+        height: 56px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .cab-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      .cab-bili {
+        width: 486px;
+        height: 479px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .cab-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .cab-bili:hover .cab-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .cab-chouti {
+        position: relative;
+        width: 488px;
+        height: 229px;
+        float: left;
+        margin: 10px 9px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .cab-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .cab-chouti:hover .cab-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .cab-ligui {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        float: left;
+        margin: 10px;
+        img {
+          width: 100%;
+        }
+        .cab-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .cab-ligui:hover .cab-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+// 沙发
+.sofa {
+  width: $maxWidth;
+  margin-top: 40px;
+  .sofa-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 52px;
+        height: 56px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .sofa-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      .sofa-chanyi {
+        width: 486px;
+        height: 479px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .sofa-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .sofa-chanyi:hover .sofa-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .sofa-shuangren {
+        position: relative;
+        width: 488px;
+        height: 229px;
+        float: left;
+        margin: 10px 9px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .sofa-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .sofa-shuangren:hover .sofa-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .sofa-danren {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        float: left;
+        margin: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .upright {
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          top: -16px;
+          left: -10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .sofa-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1.5s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      .sofa-danren:hover .sofa-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+// /一枚板
+.ymb {
+  width: $maxWidth;
+  margin-top: 40px;
+  .ymb-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 52px;
+        height: 56px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .ymb-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      li {
+        width: 237px;
+        height: 485px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .ymb-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      li:hover .ymb-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+// 其他
+.other {
+  overflow: hidden;
+  width: $maxWidth;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  .other-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    h2 {
+      width: 74px;
+      height: 80px;
+      margin: 20px 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 52px;
+        height: 56px;
+      }
+      p {
+        font-size: 16px;
+        color: #848484;
+        line-height: 30px;
+      }
+    }
+    .other-body {
+      width: $minWidth;
+      margin-top: 30px;
+      font-size: 16px;
+      font-family: "SimSun";
+      text-align: center;
+      li {
+        width: 234px;
+        height: 234px;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .other-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+
+      li:hover .other-jiage {
+        visibility: visible;
+        opacity: 1;
+      }
+      .other-yijia {
+        width: 260px;
+        height: 476px;
+        margin: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .other-jiage {
+          visibility: hidden;
+          opacity: 0;
+          padding-top: 10px;
+          width: 100%;
+          height: 64px;
+          color: #666;
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 1s;
+          span {
+            display: inline;
+            color: #000;
+          }
+        }
+        .other-yijia:hover .other-jiage {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+// 底部
+.foot {
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+  width: $maxWidth;
+  margin-top: 80px;
+  .foot-box {
+    margin-bottom: 50px;
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    ul {
+      margin-top: 80px;
+      float: left;
+      width: 150px;
+      text-align: center;
+      background-color: rgb(245, 245, 245);
+      margin-bottom: 20px;
+      li {
+        width: 150px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      li.foot-title {
+        line-height: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        a {
+          padding: 0 20px;
+          border-right: 1px black solid;
+        }
+      }
+    }
+    .foot-chat {
+      // float: right;
+      margin-top: 245px;
+      width: $minWidth;
+      p {
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .copyright {
+      margin-top: 275px;
+      width: $minWidth;
+      height: 30px;
+      text-align: center;
+      color: #666;
+      p {
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// 登录页面
+
+.login-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 20;
+  
+  .login-box {
+    width: 800px;
+    height: 454px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .cancle {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: 0.5;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+      .login-box2{
+        width: 596px;
+        height: 296px;
+        margin-top: 80px;
+        margin-left: 104px;
+        .login-left{
+          width: 236px;
+          height: 296px;
+          float: left;
+          border-right:1px solid rgb(201, 201, 201); 
+          .login-saoma{
+            line-height: 26px;
+            font-size: 14px;
+            color: #000;
+            text-indent: 2em;
+            font-family:"SimSun";
+            font-weight: bold;
+          }
+          .login-weixin{
+            margin-top: 50px;
+            width: 134px;
+            height: 134px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .login-tips{
+            margin-top: 64px;
+            line-height: 26px;
+            font-size: 12px;
+            color: #666;
+            text-indent: 2em;
+            font-family:"SimSun";
+          }
+        }
+        .login-right{
+          font-family:"SimSun";
+          width: 280px;
+          height: 296px;
+          float: left;
+          margin-left: 78px;
+          .userlogin{
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          .username-div{
+            border-bottom: 1px solid rgb(201, 201, 201)!important;
+            margin-bottom: 10px;
+            position: relative;
+            .userpwd,.username{
+                width: 280px;
+                height: 40px;
+                border:none;
+                line-height: 40px;
+              }
+              .userpwd,.username:focus{
+                outline: none;
+              }
+              .zhuanghu-tips{
+                position: absolute;
+                right: 0;
+                top: 10px;
+                font-size: 14px;
+              }
+            }
+            .remeber-p{
+              width: 280px;
+              height: 16px;
+              margin-bottom: 10px;   
+            }
+            .remeber-label{
+              margin-bottom: 5px;
+              line-height: 16px;
+            }
+            .userpad-new{
+              float: right;
+              a:hover{
+                text-decoration:underline;
+                color: #f9d7ac;
+            }
+          }
+            .denglu:focus{
+              outline: none;
+            }
+            .phone-denglu,.denglu{
+              width: 280px;
+              height: 40px;
+              background-color: #000;
+              color: #fff;
+              line-height: 40px;
+              font-size: 14px;
+              text-align: center;
+              border: none;
+              margin-top: 10px;
+            }
+            .zhuce{
+              line-height: 20px;
+              text-align: center;
+              margin: 5px 0;
+              a:hover{
+                text-decoration:underline;
+                color: #f9d7ac;
+            }
+            }
+            .phone-denglu{
+              margin-top: 7px;
+              background-color: #666;
+            }
+        }
+
+      }
+  }
+}
+.register-shadow {
+  font-family:"SimSun";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 20;
+  .register-box {
+    width: 432px;
+    height: 532px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .cancle {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: 0.5;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+      .register-box2{
+        width: 326px;
+        height: 404px;
+        margin-top: 65px;
+        margin-left: 52px;
+          h3{
+            text-align: center;
+            line-height: 26px;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 30px;
+          }
+          .register-li{
+            width: 326px;
+            border-bottom: 1px solid rgb(201, 201, 201)!important;
+            margin-bottom: 10px;
+            position: relative;
+            input{
+              width: 326px;
+              height: 52px;
+                border:none;
+                line-height: 40px;
+              }
+             input:focus{
+                outline: none;
+              }
+              .verification{
+                display: block;
+                position: absolute;
+                top:0;
+                left:124px;
+                width:80px;
+                height: 40px;
+                background-color: #999;
+                color: #000;
+                text-align: center;
+                line-height:40px; 
+                font-size: 16px;
+                letter-spacing:5px;
+               
+              }
+              .zhuanghu-tips{
+                position: absolute;
+                right: 0;
+                top: 10px;
+                font-size: 14px;
+              }
+            }
+            .register-btn{
+              width: 280px;
+              height: 16px;
+              margin-bottom: 10px;
+              border-bottom: 0;
+              .registerbtn{
+                width: 16px;
+                height: 16px;
+               
+                float: left;
+              }   
+                  span{
+                    float: left;
+                    line-height:16px;
+                    font-size: 12px;
+                  margin-left: 5px;
+                  }
+            }
+            .register-zhuce{
+              width: 326px;
+              height: 52px;
+              background-color: #000;
+              color: #fff;
+              line-height: 40px;
+              font-size: 14px;
+              text-align: center;
+              border: none;
+              margin-top: 15px;
+            }
+           
+        }
+
+      }
+  }
+
+
+

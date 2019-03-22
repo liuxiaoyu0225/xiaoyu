@@ -1,0 +1,747 @@
+@charset "utf-8";
+$minWidth: 1120px;
+$maxWidth: 100%;
+html,
+body {
+  font-family: "STKaiti";
+}
+.top {
+  width: $maxWidth;
+  background-color: rgb(247, 247, 247);
+  height: 28px;
+  .top-box {
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    color: rgb(165, 165, 165);
+    height: 28px;
+  }
+}
+// 头部导航
+.header {
+  position: relative;
+  //   overflow: hidden;
+  width: $maxWidth;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 87px;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  .header-box {
+    width: $minWidth;
+    margin-left: auto;
+    margin-right: auto;
+    .logo-box {
+      width: 62px;
+      height: 85px;
+      border: 1px rgb(182, 182, 182) solid;
+      float: left;
+      img {
+        width: 62px;
+        height: 85px;
+      }
+    }
+    .header-nav {
+      width: 610px;
+      height: 85px;
+      margin-left: auto;
+      margin-right: auto;
+      .furniture,
+      .home,
+      .art,
+      .column,
+      .news {
+        color: rgb(137, 137, 137);
+        font-size: 14px;
+        margin: 0 47px;
+        float: left;
+
+        a {
+          display: inline-block;
+          padding-top: 35px;
+          padding-bottom: 30px;
+        }
+        a.selecta {
+          color: rgb(93, 93, 93);
+          border-bottom: 3px solid black;
+        }
+
+        .furniture-subnav,
+        .home-subnav,
+        .art-subnav,
+        .column-subnav {
+          z-index: 3;
+          width: $maxWidth;
+          height: 84px;
+          position: absolute;
+          left: 0;
+          bottom: -84px;
+          background-color: rgba(255, 255, 255, 0.5);
+          text-align: center;
+          display: none;
+          transition: 3s;
+          ul {
+            margin-left: 225px;
+            li {
+              float: left;
+              padding: 0 10px;
+            }
+            li.other {
+              line-height: 84px;
+              padding: 0;
+              a {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 10px;
+                line-height: 12px;
+                border-right: 1px rgb(137, 137, 137) solid;
+              }
+            }
+          }
+          .art-ul {
+            margin-left: 593px;
+          }
+          .column-ul {
+            margin-left: 700px;
+          }
+        }
+      }
+      .furniture:hover .furniture-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .furniture:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .home:hover .home-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .home:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .art:hover .art-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .art:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .column:hover .column-subnav {
+        display: block;
+        a {
+          border-bottom: 0;
+        }
+      }
+      .column:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+      .news:hover a {
+        color: rgb(93, 93, 93);
+        border-bottom: 3px solid black;
+      }
+    }
+    .header-event {
+      float: right;
+      margin-top: -57px;
+      li {
+        padding: 9px;
+        float: left;
+        cursor: pointer;
+        .seach {
+          width: 50px;
+          height: 14px;
+          border-radius: 16px;
+          border: 1px #666 solid;
+          padding: 0 5px;
+        }
+        .seach:focus {
+          outline: none;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      #denglu-suce {
+        display: none;
+        position: relative;
+        p {
+          position: absolute;
+          left: 0;
+          bottom: -30px;
+          width: 50px;
+          height: 30px;
+          font-size: 14px;
+          text-align: center;
+          line-height: 30px;
+          border: 1px solid black;
+          display: none;
+        }
+      }
+      .login-zi {
+        cursor: pointer;
+        display: none;
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// .shopping-car{
+//   width: $maxWidth;
+// .shopping-box{
+//   width: 110px;
+//   height: 300px;
+// }
+// }
+
+.cartparent {
+  width: $maxWidth;
+  margin-top: 100px;
+  font-family: "Gill Sans";
+  .cart {
+    width: $minWidth;
+    margin: 0 auto;
+    .top {
+      background-color: #fff;
+      width: $minWidth;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #e1e1e1;
+      margin-top: 10px;
+      .check-all{
+        margin-top: 18px;
+        margin-left: 20px;
+        width: 16px;
+        height: 16px;
+        float: left;
+      }
+      .title {
+        margin-left: 20px;
+        color: #666;
+        font-size: 16px;
+        float: left;
+      }
+    }
+    .header {
+      width: $minWidth;
+      color: #666;
+      overflow: hidden;
+      border-bottom: 1px solid #e1e1e1;
+      font-size: 14px;
+      line-height: 70px;
+      li {
+        float: left;
+      }
+      .shangping {
+        padding: 10px 130px;
+      }
+      .guige {
+        padding: 10px 95px;
+      }
+      .danjia {
+        padding: 10px 75px;
+      }
+      .count {
+        padding: 10px 105px;
+      }
+      .sum {
+        padding: 10px 60px;
+      }
+    }
+    .detail {
+      width: $minWidth;
+      margin: 0 auto;
+      border-bottom: solid 1px #e1e1e1;
+      .item {
+        border-bottom: solid 1px #e1e1e1;
+        overflow: hidden;
+        width:$minWidth;
+        .check-one{
+            float: left;
+            margin-left: 10px;
+            margin-top: 48px;
+        }
+        .img {
+          float: left;
+          /* height: 115px; */
+          width: 100px;
+          height: 100px;
+          margin: 10px 10px;
+          a {
+            cursor: pointer;
+          }
+        }
+        .title {
+          float: left;
+          margin-top: 40px;
+          font-size: 16px;
+          width: 222px;
+          color: #666;
+        }
+        .guige {
+          float: left;
+          padding: 38px 10px;
+          line-height: 26px;
+          width: 130px;
+          color: #666;
+          font-size: 16px;
+        }
+        .danjia {
+          float: left;
+          height: 115px;
+          line-height: 102px;
+          font-size: 16px;
+          width: 190px;
+          text-align: center;
+          color: #666;
+        }
+        .count {
+          float: left;
+          margin: 40px 0px 43px 37px;
+          li {
+            float: left;
+          }
+          .reduce {
+            border: solid 1px #998662;
+            padding: 0px 5px 2px 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 2px;
+            margin-left: 10px;
+            font-size: 12px;
+          }
+          input {
+            width: 50px;
+            margin: 0px 10px;
+            padding: 5px;
+            text-align: center;
+            background-color: transparent;
+            border: #e1e1e1 1px solid;
+            font-size: 12px;
+            border-radius: 3px;
+          }
+          .add {
+            border: solid 1px #998662;
+            padding: 0px 3px 2px 3px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 2px;
+            font-size: 12px;
+          }
+        }
+        .sum {
+          float: left;
+          height: 115px;
+          line-height: 108px;
+          font-size: 20px;
+          color: #666;
+          width: 185px;
+          text-align: right;
+        }
+        .dele{
+          line-height: 108px;
+          font-size: 22px;
+          font-weight: 60;
+          margin-left:48px ;
+          counter-reset: #666;
+          cursor: pointer;
+
+        }
+      }
+    }
+    .bottom {
+      float: left;
+      height: 70px;
+      width: 100%;
+      background-color: rgb(242, 242, 242);
+      .dele-all{
+        font-size:16px;
+        line-height: 66px;
+        float: left;
+        cursor: pointer;
+        color: #666;
+        margin-left: 20px;
+      }
+      .pay {
+        float: right;
+        width: 150px;
+        height: 70px;
+        line-height: 70px;
+        background-color: #000;
+        letter-spacing: 3px;
+        color: #fff;
+        text-align: center;
+        font-size:18px;
+      }
+      .price {
+        font-size: 14px;
+        color: #666;
+        height: 85px;
+        line-height: 72px;
+        float: right;
+        margin-right: 30px;
+        span {
+          color: #666;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+// 底部
+.foot {
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+    width: $maxWidth;
+    margin-top: 80px;
+    .foot-box {
+      margin-bottom: 50px;
+      width: $minWidth;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      ul {
+        margin-top: 80px;
+        float: left;
+        width: 150px;
+        text-align: center;
+        background-color: rgb(245, 245, 245);
+        margin-bottom: 20px;
+        li {
+          width: 150px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        li.foot-title {
+          line-height: 30px;
+          font-size: 16px;
+          margin-bottom: 20px;
+          a {
+            padding: 0 20px;
+            border-right: 1px black solid;
+          }
+        }
+      }
+      .foot-chat {
+        // float: right;
+        margin-top: 245px;
+        width: $minWidth;
+        p {
+          float: right;
+          width: 30px;
+          height: 30px;
+          margin-left: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .copyright {
+        margin-top: 275px;
+        width: $minWidth;
+        height: 30px;
+        text-align: center;
+        color: #666;
+        p {
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  
+  // 登录页面
+  
+  .login-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 20;
+    .login-box {
+      width: 800px;
+      height: 454px;
+      background-color: #fff;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .cancle {
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: 0.5;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .login-box2 {
+        width: 596px;
+        height: 296px;
+        margin-top: 80px;
+        margin-left: 104px;
+        .login-left {
+          width: 236px;
+          height: 296px;
+          float: left;
+          border-right: 1px solid rgb(201, 201, 201);
+          .login-saoma {
+            line-height: 26px;
+            font-size: 14px;
+            color: #000;
+            text-indent: 2em;
+            font-family: "SimSun";
+            font-weight: bold;
+          }
+          .login-weixin {
+            margin-top: 50px;
+            width: 134px;
+            height: 134px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .login-tips {
+            margin-top: 64px;
+            line-height: 26px;
+            font-size: 12px;
+            color: #666;
+            text-indent: 2em;
+            font-family: "SimSun";
+          }
+        }
+        .login-right {
+          font-family: "SimSun";
+          width: 280px;
+          height: 296px;
+          float: left;
+          margin-left: 78px;
+          .userlogin {
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          .username-div {
+            border-bottom: 1px solid rgb(201, 201, 201) !important;
+            margin-bottom: 10px;
+            position: relative;
+            .userpwd,
+            .username {
+              width: 280px;
+              height: 40px;
+              border: none;
+              line-height: 40px;
+            }
+            .userpwd,
+            .username:focus {
+              outline: none;
+            }
+            .zhuanghu-tips {
+              position: absolute;
+              right: 0;
+              top: 10px;
+              font-size: 14px;
+            }
+          }
+          .remeber-p {
+            width: 280px;
+            height: 16px;
+            margin-bottom: 10px;
+          }
+          .remeber-label {
+            margin-bottom: 5px;
+            line-height: 16px;
+          }
+          .userpad-new {
+            float: right;
+            a:hover {
+              text-decoration: underline;
+              color: #f9d7ac;
+            }
+          }
+          .denglu:focus {
+            outline: none;
+          }
+          .phone-denglu,
+          .denglu {
+            width: 280px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+            text-align: center;
+            border: none;
+            margin-top: 10px;
+          }
+          .zhuce {
+            line-height: 20px;
+            text-align: center;
+            margin: 5px 0;
+            a:hover {
+              text-decoration: underline;
+              color: #f9d7ac;
+            }
+          }
+          .phone-denglu {
+            margin-top: 7px;
+            background-color: #666;
+          }
+        }
+      }
+    }
+  }
+  // 注册页面
+  .register-shadow {
+    font-family: "SimSun";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 20;
+    .register-box {
+      width: 432px;
+      height: 532px;
+      background-color: #fff;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .cancle {
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: 0.5;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .register-box2 {
+        width: 326px;
+        height: 404px;
+        margin-top: 65px;
+        margin-left: 52px;
+        h3 {
+          text-align: center;
+          line-height: 26px;
+          font-size: 20px;
+          color: #000;
+          margin-bottom: 30px;
+        }
+        .register-li {
+          width: 326px;
+          border-bottom: 1px solid rgb(201, 201, 201) !important;
+          margin-bottom: 10px;
+          position: relative;
+          input {
+            width: 326px;
+            height: 52px;
+            border: none;
+            line-height: 40px;
+          }
+          input:focus {
+            outline: none;
+          }
+          .verification {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 124px;
+            width: 80px;
+            height: 40px;
+            background-color: #999;
+            color: #000;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            letter-spacing: 5px;
+          }
+          .zhuanghu-tips {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            font-size: 14px;
+          }
+        }
+        .register-btn {
+          width: 280px;
+          height: 16px;
+          margin-bottom: 10px;
+          border-bottom: 0;
+          .registerbtn {
+            width: 16px;
+            height: 16px;
+  
+            float: left;
+          }
+          span {
+            float: left;
+            line-height: 16px;
+            font-size: 12px;
+            margin-left: 5px;
+          }
+        }
+        .register-zhuce {
+          width: 326px;
+          height: 52px;
+          background-color: #000;
+          color: #fff;
+          line-height: 40px;
+          font-size: 14px;
+          text-align: center;
+          border: none;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  
